@@ -48,8 +48,22 @@ h2{
   padding-top: 30px
 }
 .links a{
+  justify-content: space-between;
   color: black;
   font-size: 25px;
   font-family: 'Roboto Mono', monospace;
   border-bottom: 1px solid #dfdfdf;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.next-quote{
+  color: #f84342;
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-size: 20px;
+}
+.footer-blurb{
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-style: italic;
+  text-align: right;
+  font-size: 15px;
 }
