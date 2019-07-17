@@ -28,7 +28,7 @@ h2{
     border: 1px solid #F7F7F7;
     width: 80px;
     height: 80px;
-    margin: 10px 10px;
+    margin: 10px 40px;
     text-align: center;
     color: #FFF;
     font-size: 10px;
@@ -41,11 +41,11 @@ h2{
 .slogan {
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-style: italic;
-  padding-top: 33px;
+  padding-top: 43px;
   font-size: 20px;
 }
 .links{
-  padding-top: 30px
+  padding-top: 35px
 }
 .links a{
   justify-content: space-between;
@@ -66,4 +66,7 @@ h2{
   font-style: italic;
   text-align: right;
   font-size: 15px;
+}
+.logo:hover {
+  text-decoration: none;
 }
