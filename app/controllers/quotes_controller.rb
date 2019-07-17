@@ -4,7 +4,7 @@ class QuotesController < ApplicationController
   end
 
 
-  def create
+  def create #<-action
     @quote = Quote.create(quote_params)
     if @quote.invalid?
       flash[:error] = '<strong>Could not save</strong> the data you entered is invalid'
@@ -15,6 +15,7 @@ class QuotesController < ApplicationController
   def about
 
   end
+  
 
   private
 
