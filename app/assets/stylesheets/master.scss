@@ -45,7 +45,7 @@ h2{
   font-size: 20px;
 }
 .links{
-  padding-top: 35px
+  padding-top: 35px;
 }
 .links a{
   justify-content: space-between;
@@ -89,4 +89,17 @@ h2{
 }
 #myModalLabel {
   text-align: center;
+}
+.simple_form label {
+  padding-right: 5px;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+  text-align: left;
+  }
+}
+.modal {
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-size: 20px;
 }

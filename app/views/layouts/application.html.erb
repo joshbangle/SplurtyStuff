@@ -12,7 +12,7 @@
   <body>
 <!--NavBar Begin -->
     <header class="row">
-      <div class="col-2">
+      <div class="col-md-2 col-xs-12 offset-xs-5">
         <%= link_to root_path, class: 'logo' do %>
         <div class="circle">
           <br />
@@ -24,12 +24,14 @@
         </div>
         <% end %>
       </div>
-      <div class="col-5 slogan">
+      <div class="col-md-6 offset-1 col-sm-4 hidden-xs-down slogan">
       Splurting out actory stuff for actors who like to act.
       </div>
-      <div class="col-5 links">
+      <div class="col-md-3 offset-1 offset-sm-0 col-sm-5 links">
               <!-- Button trigger modal -->
         <%= link_to 'Contribute', new_quote_path, data: {toggle: 'modal', target: '#myModal'} %>
+        &nbsp;
+        &nbsp;
         <%= link_to 'About', about_path %>
       </div>
 
@@ -49,10 +51,10 @@
           <%= simple_form_for Quote.new do |f| %>
             <div class="modal-body">
               <div class="form-group text-center mt-4 mr-2">
-                <%= f.input :saying %>
+                <%= f.input :saying, label: "Quote", placeholder: " 140 Character Limit" %>
               </div>
               <div class="form-group text-center mr-2">
-                <%= f.input :author %>
+                <%= f.input :author, placeholder: " 40 Character Limit" %>
               </div> 
             </div>
             <div class="modal-footer">
@@ -84,10 +86,10 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-sm-6">
             <%= link_to "This isn't enough, I need more cheesy goodness", root_path, class: 'next-quote' %>
           </div>
-          <div class="col-6 footer-blurb">
+          <div class="col-12 col-sm-6 footer-blurb">
             Proudly hacked by <a href="#">Joshua Bangle</a><br />
             Want to build your own Splurty web app? - <a href="https://online.bootcampspot.com">Learn how to code here!</a>
           </div>
